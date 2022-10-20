@@ -77,3 +77,25 @@ const cardNumberPattern = {
 
 
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
+
+const addButton = document.querySelector("#add-card")
+addButton.addEventListener("click", () => {
+  console.log("clicou em fera")
+})
+
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
+
+const inputCardName = document.querySelector("#card-holder")
+const cardName = document.querySelector(".cc .cc-info .cc-holder .value")
+
+inputCardName.addEventListener("keyup", (event) => {
+  const inputContent = event.target.value
+  
+  cardName.textContent = inputContent
+
+  if(inputContent === '') {
+    cardName.textContent = "FULANO DA SILVA"
+  }
+})

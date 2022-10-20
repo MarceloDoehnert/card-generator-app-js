@@ -99,3 +99,4 @@ inputCardName.addEventListener("keyup", (event) => {
     cardName.textContent = "FULANO DA SILVA"
   }
 })
+

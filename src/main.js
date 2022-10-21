@@ -84,7 +84,7 @@ addButton.addEventListener("click", () => {
 })
 
 document.querySelector("form").addEventListener("submit", (event) => {
-  alert("Cartão criado com sucesso!")
+  alert("Cartão criado com sucesso!!")
   event.preventDefault()
 })
 
